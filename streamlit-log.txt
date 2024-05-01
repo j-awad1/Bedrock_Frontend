@@ -1,0 +1,209 @@
+
+Collecting usage statistics. To deactivate, set browser.gatherUsageStats to false.
+
+
+  You can now view your Streamlit app in your browser.
+
+  Network URL: http://169.255.255.2:8502
+  External URL: http://35.170.135.114:8502
+
+2024-05-01 14:25:59.601 Uncaught app exception
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 584, in _run_script
+    exec(code, module.__dict__)
+  File "/home/sagemaker-user/demo/app-kb.py", line 142, in <module>
+    st.text_area("Q:", value=chat["question"], height=50, key=str(chat)+"q", disabled=True)
+  File "/opt/conda/lib/python3.9/site-packages/streamlit/runtime/metrics_util.py", line 397, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+  File "/opt/conda/lib/python3.9/site-packages/streamlit/elements/widgets/text_widgets.py", line 484, in text_area
+    return self._text_area(
+  File "/opt/conda/lib/python3.9/site-packages/streamlit/elements/widgets/text_widgets.py", line 563, in _text_area
+    widget_state = register_widget(
+  File "/opt/conda/lib/python3.9/site-packages/streamlit/runtime/state/widgets.py", line 164, in register_widget
+    return register_widget_from_metadata(metadata, ctx, widget_func_name, element_type)
+  File "/opt/conda/lib/python3.9/site-packages/streamlit/runtime/state/widgets.py", line 197, in register_widget_from_metadata
+    raise DuplicateWidgetID(
+streamlit.errors.DuplicateWidgetID: There are multiple widgets with the same `key='{'question': 'name: current actual UPB definition: the actual outstanding unpaid principal balance (UPB) of the mortgage loan. Use {name} and {definition} to get context for {name}, match {name} context to object properties within a domain. List matched object properties/attributes, object property descriptions/definitions, domain, domain description/definition. Show the source for each matches. Rate the potential matches for accuracy  between 1 to 10 where 1 is low match and 10 is high match. for each matches, provide the accuracy  number.', 'answer': 'To match {name} and {definition} to object properties within a domain, I will consider the following sources:\n\n1. <http://purl.org/dc/terms/description> "Data that describes the rules that govern one or more principal and interest payment adjustments."\n\nBased on the given sources, here are the potential matches:\n\nDomain: Mortgage Loan\nDomain Description: Data that describes the rules that govern one or more principal and interest payment adjustments.\n\nMatched Object Property: currentActualUPB\nObject Property Description: The actual outstanding unpaid principal balance (UPB) of the mortgage loan.\nSource: Given in the problem statement.\nAccuracy Rating: 10 (High match)\n\nThe given {name} and {definition} directly match the object property "currentActualUPB" and its description within the domain of mortgage loans. The source provided describes the rules governing principal and interest payment adjustments, which aligns with the concept of tracking the outstanding unpaid principal balance of a mortgage loan.', 'model': 'Claude 3-Sonnet', 'max_gen_len': 2048, 'temperature': 0.3, 'top_p': 0.5, 'refrences': 's3://genai-lab-a26/Containers.ttl'}q'`.
+
+To fix this, please make sure that the `key` argument is unique for each
+widget you create.
+2024-05-01 15:16:47.651 Uncaught app exception
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 584, in _run_script
+    exec(code, module.__dict__)
+  File "/home/sagemaker-user/demo/app-kb.py", line 142, in <module>
+    st.text_area("Q:", value=chat["question"], height=50, key=str(chat)+"q", disabled=True)
+  File "/opt/conda/lib/python3.9/site-packages/streamlit/runtime/metrics_util.py", line 397, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+  File "/opt/conda/lib/python3.9/site-packages/streamlit/elements/widgets/text_widgets.py", line 484, in text_area
+    return self._text_area(
+  File "/opt/conda/lib/python3.9/site-packages/streamlit/elements/widgets/text_widgets.py", line 563, in _text_area
+    widget_state = register_widget(
+  File "/opt/conda/lib/python3.9/site-packages/streamlit/runtime/state/widgets.py", line 164, in register_widget
+    return register_widget_from_metadata(metadata, ctx, widget_func_name, element_type)
+  File "/opt/conda/lib/python3.9/site-packages/streamlit/runtime/state/widgets.py", line 197, in register_widget_from_metadata
+    raise DuplicateWidgetID(
+streamlit.errors.DuplicateWidgetID: There are multiple widgets with the same `key='{'question': 'name: current actual UPB definition: the actual outstanding unpaid principal balance (UPB) of the mortgage loan. Use {name} and {definition} to get context for {name}, match {name} context to object properties within a domain. List matched object properties/attributes, object property descriptions/definitions, domain, domain description/definition. Show the source for each matches. Rate the potential matches for accuracy  between 1 to 10 where 1 is low match and 10 is high match. for each matches, provide the accuracy  number.', 'answer': 'To match {name} and {definition} to object properties within a domain, I will consider the following sources:\n\n1. <http://purl.org/dc/terms/description> "Data that describes the rules that govern one or more principal and interest payment adjustments."\n\nBased on the given sources, here are the potential matches:\n\nDomain: Mortgage Loan\nDomain Description: Data that describes the rules that govern one or more principal and interest payment adjustments.\n\nMatched Object Property: currentActualUPB\nObject Property Description: The actual outstanding unpaid principal balance (UPB) of the mortgage loan.\nSource: Given in the problem statement.\nAccuracy Rating: 10 (High match)\n\nThe given {name} and {definition} directly match the object property "currentActualUPB" and its description within the domain of mortgage loans. The source provided describes the rules governing principal and interest payment adjustments, which aligns with the concept of tracking the outstanding unpaid principal balance of a mortgage loan.', 'model': 'Claude 3-Sonnet', 'max_gen_len': 2048, 'temperature': 0.3, 'top_p': 0.5, 'refrences': 's3://genai-lab-a26/Containers.ttl'}q'`.
+
+To fix this, please make sure that the `key` argument is unique for each
+widget you create.
+2024-05-01 15:16:53.815 Uncaught app exception
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 584, in _run_script
+    exec(code, module.__dict__)
+  File "/home/sagemaker-user/demo/app-kb.py", line 142, in <module>
+    st.text_area("Q:", value=chat["question"], height=50, key=str(chat)+"q", disabled=True)
+  File "/opt/conda/lib/python3.9/site-packages/streamlit/runtime/metrics_util.py", line 397, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+  File "/opt/conda/lib/python3.9/site-packages/streamlit/elements/widgets/text_widgets.py", line 484, in text_area
+    return self._text_area(
+  File "/opt/conda/lib/python3.9/site-packages/streamlit/elements/widgets/text_widgets.py", line 563, in _text_area
+    widget_state = register_widget(
+  File "/opt/conda/lib/python3.9/site-packages/streamlit/runtime/state/widgets.py", line 164, in register_widget
+    return register_widget_from_metadata(metadata, ctx, widget_func_name, element_type)
+  File "/opt/conda/lib/python3.9/site-packages/streamlit/runtime/state/widgets.py", line 197, in register_widget_from_metadata
+    raise DuplicateWidgetID(
+streamlit.errors.DuplicateWidgetID: There are multiple widgets with the same `key='{'question': 'name: current actual UPB definition: the actual outstanding unpaid principal balance (UPB) of the mortgage loan. Use {name} and {definition} to get context for {name}, match {name} context to object properties within a domain. List matched object properties/attributes, object property descriptions/definitions, domain, domain description/definition. Show the source for each matches. Rate the potential matches for accuracy  between 1 to 10 where 1 is low match and 10 is high match. for each matches, provide the accuracy  number.', 'answer': 'To match {name} and {definition} to object properties within a domain, I will consider the following sources:\n\n1. <http://purl.org/dc/terms/description> "Data that describes the rules that govern one or more principal and interest payment adjustments."\n\nBased on the given sources, here are the potential matches:\n\nDomain: Mortgage Loan\nDomain Description: Data that describes the rules that govern one or more principal and interest payment adjustments.\n\nMatched Object Property: currentActualUPB\nObject Property Description: The actual outstanding unpaid principal balance (UPB) of the mortgage loan.\nSource: Given in the problem statement.\nAccuracy Rating: 10 (High match)\n\nThe given {name} and {definition} directly match the object property "currentActualUPB" and its description within the domain of mortgage loans. The source provided describes the rules governing principal and interest payment adjustments, which aligns with the concept of tracking the outstanding unpaid principal balance of a mortgage loan.', 'model': 'Claude 3-Sonnet', 'max_gen_len': 2048, 'temperature': 0.3, 'top_p': 0.5, 'refrences': 's3://genai-lab-a26/Containers.ttl'}q'`.
+
+To fix this, please make sure that the `key` argument is unique for each
+widget you create.
+2024-05-01 15:23:33.171 Uncaught app exception
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 584, in _run_script
+    exec(code, module.__dict__)
+  File "/home/sagemaker-user/demo/app-kb.py", line 142, in <module>
+    st.text_area("Q:", value=chat["question"], height=50, key=str(chat)+"q", disabled=True)
+  File "/opt/conda/lib/python3.9/site-packages/streamlit/runtime/metrics_util.py", line 397, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+  File "/opt/conda/lib/python3.9/site-packages/streamlit/elements/widgets/text_widgets.py", line 484, in text_area
+    return self._text_area(
+  File "/opt/conda/lib/python3.9/site-packages/streamlit/elements/widgets/text_widgets.py", line 563, in _text_area
+    widget_state = register_widget(
+  File "/opt/conda/lib/python3.9/site-packages/streamlit/runtime/state/widgets.py", line 164, in register_widget
+    return register_widget_from_metadata(metadata, ctx, widget_func_name, element_type)
+  File "/opt/conda/lib/python3.9/site-packages/streamlit/runtime/state/widgets.py", line 197, in register_widget_from_metadata
+    raise DuplicateWidgetID(
+streamlit.errors.DuplicateWidgetID: There are multiple widgets with the same `key='{'question': 'name: current actual UPB definition: the actual outstanding unpaid principal balance (UPB) of the mortgage loan. Use {name} and {definition} to get context for {name}, match {name} context to object properties within a domain. List matched object properties/attributes, object property descriptions/definitions, domain, domain description/definition. Show the source for each matches. Rate the potential matches for accuracy  between 1 to 10 where 1 is low match and 10 is high match. for each matches, provide the accuracy  number.', 'answer': 'To match {name} and {definition} to object properties within a domain, I will consider the following sources:\n\n1. <http://purl.org/dc/terms/description> "Data that describes the rules that govern one or more principal and interest payment adjustments."\n\nBased on the given sources, here are the potential matches:\n\nDomain: Mortgage Loan\nDomain Description: Data that describes the rules that govern one or more principal and interest payment adjustments.\n\nMatched Object Property: currentActualUPB\nObject Property Description: The actual outstanding unpaid principal balance (UPB) of the mortgage loan.\nSource: Given in the problem statement.\nAccuracy Rating: 10 (High match)\n\nThe given {name} and {definition} directly match the object property "currentActualUPB" and its description within the domain of mortgage loans. The source provided describes the rules governing principal and interest payment adjustments, which aligns with the concept of tracking the outstanding unpaid principal balance of a mortgage loan.', 'model': 'Claude 3-Sonnet', 'max_gen_len': 2048, 'temperature': 0.3, 'top_p': 0.5, 'refrences': 's3://genai-lab-a26/Containers.ttl'}q'`.
+
+To fix this, please make sure that the `key` argument is unique for each
+widget you create.
+2024-05-01 15:23:37.947 Uncaught app exception
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 584, in _run_script
+    exec(code, module.__dict__)
+  File "/home/sagemaker-user/demo/app-kb.py", line 142, in <module>
+    st.text_area("Q:", value=chat["question"], height=50, key=str(chat)+"q", disabled=True)
+  File "/opt/conda/lib/python3.9/site-packages/streamlit/runtime/metrics_util.py", line 397, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+  File "/opt/conda/lib/python3.9/site-packages/streamlit/elements/widgets/text_widgets.py", line 484, in text_area
+    return self._text_area(
+  File "/opt/conda/lib/python3.9/site-packages/streamlit/elements/widgets/text_widgets.py", line 563, in _text_area
+    widget_state = register_widget(
+  File "/opt/conda/lib/python3.9/site-packages/streamlit/runtime/state/widgets.py", line 164, in register_widget
+    return register_widget_from_metadata(metadata, ctx, widget_func_name, element_type)
+  File "/opt/conda/lib/python3.9/site-packages/streamlit/runtime/state/widgets.py", line 197, in register_widget_from_metadata
+    raise DuplicateWidgetID(
+streamlit.errors.DuplicateWidgetID: There are multiple widgets with the same `key='{'question': 'name: current actual UPB definition: the actual outstanding unpaid principal balance (UPB) of the mortgage loan. Use {name} and {definition} to get context for {name}, match {name} context to object properties within a domain. List matched object properties/attributes, object property descriptions/definitions, domain, domain description/definition. Show the source for each matches. Rate the potential matches for accuracy  between 1 to 10 where 1 is low match and 10 is high match. for each matches, provide the accuracy  number.', 'answer': 'To match {name} and {definition} to object properties within a domain, I will consider the following sources:\n\n1. <http://purl.org/dc/terms/description> "Data that describes the rules that govern one or more principal and interest payment adjustments."\n\nBased on the given sources, here are the potential matches:\n\nDomain: Mortgage Loan\nDomain Description: Data that describes the rules that govern one or more principal and interest payment adjustments.\n\nMatched Object Property: currentActualUPB\nObject Property Description: The actual outstanding unpaid principal balance (UPB) of the mortgage loan.\nSource: Given in the problem statement.\nAccuracy Rating: 10 (High match)\n\nThe given {name} and {definition} directly match the object property "currentActualUPB" and its description within the domain of mortgage loans. The source provided describes the rules governing principal and interest payment adjustments, which aligns with the concept of tracking the outstanding unpaid principal balance of a mortgage loan.', 'model': 'Claude 3-Sonnet', 'max_gen_len': 2048, 'temperature': 0.3, 'top_p': 0.5, 'refrences': 's3://genai-lab-a26/Containers.ttl'}q'`.
+
+To fix this, please make sure that the `key` argument is unique for each
+widget you create.
+2024-05-01 15:23:50.731 Uncaught app exception
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 584, in _run_script
+    exec(code, module.__dict__)
+  File "/home/sagemaker-user/demo/app-kb.py", line 142, in <module>
+    st.text_area("Q:", value=chat["question"], height=50, key=str(chat)+"q", disabled=True)
+  File "/opt/conda/lib/python3.9/site-packages/streamlit/runtime/metrics_util.py", line 397, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+  File "/opt/conda/lib/python3.9/site-packages/streamlit/elements/widgets/text_widgets.py", line 484, in text_area
+    return self._text_area(
+  File "/opt/conda/lib/python3.9/site-packages/streamlit/elements/widgets/text_widgets.py", line 563, in _text_area
+    widget_state = register_widget(
+  File "/opt/conda/lib/python3.9/site-packages/streamlit/runtime/state/widgets.py", line 164, in register_widget
+    return register_widget_from_metadata(metadata, ctx, widget_func_name, element_type)
+  File "/opt/conda/lib/python3.9/site-packages/streamlit/runtime/state/widgets.py", line 197, in register_widget_from_metadata
+    raise DuplicateWidgetID(
+streamlit.errors.DuplicateWidgetID: There are multiple widgets with the same `key='{'question': 'name: current actual UPB definition: the actual outstanding unpaid principal balance (UPB) of the mortgage loan. Use {name} and {definition} to get context for {name}, match {name} context to object properties within a domain. List matched object properties/attributes, object property descriptions/definitions, domain, domain description/definition. Show the source for each matches. Rate the potential matches for accuracy  between 1 to 10 where 1 is low match and 10 is high match. for each matches, provide the accuracy  number.', 'answer': 'To match {name} and {definition} to object properties within a domain, I will consider the following sources:\n\n1. <http://purl.org/dc/terms/description> "Data that describes the rules that govern one or more principal and interest payment adjustments."\n\nBased on the given sources, here are the potential matches:\n\nDomain: Mortgage Loan\nDomain Description: Data that describes the rules that govern one or more principal and interest payment adjustments.\n\nMatched Object Property: currentActualUPB\nObject Property Description: The actual outstanding unpaid principal balance (UPB) of the mortgage loan.\nSource: Given in the problem statement.\nAccuracy Rating: 10 (High match)\n\nThe given {name} and {definition} directly match the object property "currentActualUPB" and its description within the domain of mortgage loans. The source provided describes the rules governing principal and interest payment adjustments, which aligns with the concept of tracking the outstanding unpaid principal balance of a mortgage loan.', 'model': 'Claude 3-Sonnet', 'max_gen_len': 2048, 'temperature': 0.3, 'top_p': 0.5, 'refrences': 's3://genai-lab-a26/Containers.ttl'}q'`.
+
+To fix this, please make sure that the `key` argument is unique for each
+widget you create.
+2024-05-01 15:32:12.239 Uncaught app exception
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 584, in _run_script
+    exec(code, module.__dict__)
+  File "/home/sagemaker-user/demo/app-kb.py", line 142, in <module>
+    st.text_area("Q:", value=chat["question"], height=50, key=str(chat)+"q", disabled=True)
+  File "/opt/conda/lib/python3.9/site-packages/streamlit/runtime/metrics_util.py", line 397, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+  File "/opt/conda/lib/python3.9/site-packages/streamlit/elements/widgets/text_widgets.py", line 484, in text_area
+    return self._text_area(
+  File "/opt/conda/lib/python3.9/site-packages/streamlit/elements/widgets/text_widgets.py", line 563, in _text_area
+    widget_state = register_widget(
+  File "/opt/conda/lib/python3.9/site-packages/streamlit/runtime/state/widgets.py", line 164, in register_widget
+    return register_widget_from_metadata(metadata, ctx, widget_func_name, element_type)
+  File "/opt/conda/lib/python3.9/site-packages/streamlit/runtime/state/widgets.py", line 197, in register_widget_from_metadata
+    raise DuplicateWidgetID(
+streamlit.errors.DuplicateWidgetID: There are multiple widgets with the same `key='{'question': 'name: current actual UPB definition: the actual outstanding unpaid principal balance (UPB) of the mortgage loan. Use {name} and {definition} to get context for {name}, match {name} context to object properties within a domain. List matched object properties/attributes, object property descriptions/definitions, domain, domain description/definition. Show the source for each matches. Rate the potential matches for accuracy  between 1 to 10 where 1 is low match and 10 is high match. for each matches, provide the accuracy  number.', 'answer': 'To match {name} and {definition} to object properties within a domain, I will consider the following sources:\n\n1. <http://purl.org/dc/terms/description> "Data that describes the rules that govern one or more principal and interest payment adjustments."\n\nBased on the given sources, here are the potential matches:\n\nDomain: Mortgage Loan\nDomain Description: Data that describes the rules that govern one or more principal and interest payment adjustments.\n\nMatched Object Property: currentActualUPB\nObject Property Description: The actual outstanding unpaid principal balance (UPB) of the mortgage loan.\nSource: Given in the problem statement.\nAccuracy Rating: 10 (High match)\n\nThe given {name} and {definition} directly match the object property "currentActualUPB" and its description within the domain of mortgage loans. The source provided describes the rules governing principal and interest payment adjustments, which aligns with the concept of tracking the outstanding unpaid principal balance of a mortgage loan.', 'model': 'Claude 3-Sonnet', 'max_gen_len': 2048, 'temperature': 0.3, 'top_p': 0.5, 'refrences': 's3://genai-lab-a26/Containers.ttl'}q'`.
+
+To fix this, please make sure that the `key` argument is unique for each
+widget you create.
+2024-05-01 15:32:17.126 Uncaught app exception
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 584, in _run_script
+    exec(code, module.__dict__)
+  File "/home/sagemaker-user/demo/app-kb.py", line 142, in <module>
+    st.text_area("Q:", value=chat["question"], height=50, key=str(chat)+"q", disabled=True)
+  File "/opt/conda/lib/python3.9/site-packages/streamlit/runtime/metrics_util.py", line 397, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+  File "/opt/conda/lib/python3.9/site-packages/streamlit/elements/widgets/text_widgets.py", line 484, in text_area
+    return self._text_area(
+  File "/opt/conda/lib/python3.9/site-packages/streamlit/elements/widgets/text_widgets.py", line 563, in _text_area
+    widget_state = register_widget(
+  File "/opt/conda/lib/python3.9/site-packages/streamlit/runtime/state/widgets.py", line 164, in register_widget
+    return register_widget_from_metadata(metadata, ctx, widget_func_name, element_type)
+  File "/opt/conda/lib/python3.9/site-packages/streamlit/runtime/state/widgets.py", line 197, in register_widget_from_metadata
+    raise DuplicateWidgetID(
+streamlit.errors.DuplicateWidgetID: There are multiple widgets with the same `key='{'question': 'name: current actual UPB definition: the actual outstanding unpaid principal balance (UPB) of the mortgage loan. Use {name} and {definition} to get context for {name}, match {name} context to object properties within a domain. List matched object properties/attributes, object property descriptions/definitions, domain, domain description/definition. Show the source for each matches. Rate the potential matches for accuracy  between 1 to 10 where 1 is low match and 10 is high match. for each matches, provide the accuracy  number.', 'answer': 'To match {name} and {definition} to object properties within a domain, I will consider the following sources:\n\n1. <http://purl.org/dc/terms/description> "Data that describes the rules that govern one or more principal and interest payment adjustments."\n\nBased on the given sources, here are the potential matches:\n\nDomain: Mortgage Loan\nDomain Description: Data that describes the rules that govern one or more principal and interest payment adjustments.\n\nMatched Object Property: currentActualUPB\nObject Property Description: The actual outstanding unpaid principal balance (UPB) of the mortgage loan.\nSource: Given in the problem statement.\nAccuracy Rating: 10 (High match)\n\nThe given {name} and {definition} directly match the object property "currentActualUPB" and its description within the domain of mortgage loans. The source provided describes the rules governing principal and interest payment adjustments, which aligns with the concept of tracking the outstanding unpaid principal balance of a mortgage loan.', 'model': 'Claude 3-Sonnet', 'max_gen_len': 2048, 'temperature': 0.3, 'top_p': 0.5, 'refrences': 's3://genai-lab-a26/Containers.ttl'}q'`.
+
+To fix this, please make sure that the `key` argument is unique for each
+widget you create.
+2024-05-01 15:37:20.396 Uncaught app exception
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 584, in _run_script
+    exec(code, module.__dict__)
+  File "/home/sagemaker-user/demo/app-kb.py", line 142, in <module>
+    st.text_area("Q:", value=chat["question"], height=50, key=str(chat)+"q", disabled=True)
+  File "/opt/conda/lib/python3.9/site-packages/streamlit/runtime/metrics_util.py", line 397, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+  File "/opt/conda/lib/python3.9/site-packages/streamlit/elements/widgets/text_widgets.py", line 484, in text_area
+    return self._text_area(
+  File "/opt/conda/lib/python3.9/site-packages/streamlit/elements/widgets/text_widgets.py", line 563, in _text_area
+    widget_state = register_widget(
+  File "/opt/conda/lib/python3.9/site-packages/streamlit/runtime/state/widgets.py", line 164, in register_widget
+    return register_widget_from_metadata(metadata, ctx, widget_func_name, element_type)
+  File "/opt/conda/lib/python3.9/site-packages/streamlit/runtime/state/widgets.py", line 197, in register_widget_from_metadata
+    raise DuplicateWidgetID(
+streamlit.errors.DuplicateWidgetID: There are multiple widgets with the same `key='{'question': 'name: current actual UPB definition: the actual outstanding unpaid principal balance (UPB) of the mortgage loan. Use {name} and {definition} to get context for {name}, match {name} context to object properties within a domain. List matched object properties/attributes, object property descriptions/definitions, domain, domain description/definition. Show the source for each matches. Rate the potential matches for accuracy  between 1 to 10 where 1 is low match and 10 is high match. for each matches, provide the accuracy  number.', 'answer': 'To match {name} and {definition} to object properties within a domain, I will consider the following sources:\n\n1. <http://purl.org/dc/terms/description> "Data that describes the rules that govern one or more principal and interest payment adjustments."\n\nBased on the given sources, here are the potential matches:\n\nDomain: Mortgage Loan\nDomain Description: Data that describes the rules that govern one or more principal and interest payment adjustments.\n\nMatched Object Property: currentActualUPB\nObject Property Description: The actual outstanding unpaid principal balance (UPB) of the mortgage loan.\nSource: Given in the problem statement.\nAccuracy Rating: 10 (High match)\n\nThe given {name} and {definition} directly match the object property "currentActualUPB" and its description within the domain of mortgage loans. The source provided describes the rules governing principal and interest payment adjustments, which aligns with the concept of tracking the outstanding unpaid principal balance of a mortgage loan.', 'model': 'Claude 3-Sonnet', 'max_gen_len': 2048, 'temperature': 0.3, 'top_p': 0.5, 'refrences': 's3://genai-lab-a26/Containers.ttl'}q'`.
+
+To fix this, please make sure that the `key` argument is unique for each
+widget you create.
+2024-05-01 15:37:32.795 Uncaught app exception
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 584, in _run_script
+    exec(code, module.__dict__)
+  File "/home/sagemaker-user/demo/app-kb.py", line 142, in <module>
+    st.text_area("Q:", value=chat["question"], height=50, key=str(chat)+"q", disabled=True)
+  File "/opt/conda/lib/python3.9/site-packages/streamlit/runtime/metrics_util.py", line 397, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+  File "/opt/conda/lib/python3.9/site-packages/streamlit/elements/widgets/text_widgets.py", line 484, in text_area
+    return self._text_area(
+  File "/opt/conda/lib/python3.9/site-packages/streamlit/elements/widgets/text_widgets.py", line 563, in _text_area
+    widget_state = register_widget(
+  File "/opt/conda/lib/python3.9/site-packages/streamlit/runtime/state/widgets.py", line 164, in register_widget
+    return register_widget_from_metadata(metadata, ctx, widget_func_name, element_type)
+  File "/opt/conda/lib/python3.9/site-packages/streamlit/runtime/state/widgets.py", line 197, in register_widget_from_metadata
+    raise DuplicateWidgetID(
+streamlit.errors.DuplicateWidgetID: There are multiple widgets with the same `key='{'question': 'name: current actual UPB definition: the actual outstanding unpaid principal balance (UPB) of the mortgage loan. Use {name} and {definition} to get context for {name}, match {name} context to object properties within a domain. List matched object properties/attributes, object property descriptions/definitions, domain, domain description/definition. Show the source for each matches. Rate the potential matches for accuracy  between 1 to 10 where 1 is low match and 10 is high match. for each matches, provide the accuracy  number.', 'answer': 'To match {name} and {definition} to object properties within a domain, I will consider the following sources:\n\n1. <http://purl.org/dc/terms/description> "Data that describes the rules that govern one or more principal and interest payment adjustments."\n\nBased on the given sources, here are the potential matches:\n\nDomain: Mortgage Loan\nDomain Description: Data that describes the rules that govern one or more principal and interest payment adjustments.\n\nMatched Object Property: currentActualUPB\nObject Property Description: The actual outstanding unpaid principal balance (UPB) of the mortgage loan.\nSource: Given in the problem statement.\nAccuracy Rating: 10 (High match)\n\nThe given {name} and {definition} directly match the object property "currentActualUPB" and its description within the domain of mortgage loans. The source provided describes the rules governing principal and interest payment adjustments, which aligns with the concept of tracking the outstanding unpaid principal balance of a mortgage loan.', 'model': 'Claude 3-Sonnet', 'max_gen_len': 2048, 'temperature': 0.3, 'top_p': 0.5, 'refrences': 's3://genai-lab-a26/Containers.ttl'}q'`.
+
+To fix this, please make sure that the `key` argument is unique for each
+widget you create.
